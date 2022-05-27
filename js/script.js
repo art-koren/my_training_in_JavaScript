@@ -36,8 +36,8 @@ console.log(arr1) // [1, 2, 3, 10]
 /*
 
 const personAlexey = {
-    name: 'alexey',
-    age: 18
+	 name: 'alexey',
+	 age: 18
 }
 
 const personNikita = personAlexey;
@@ -49,8 +49,8 @@ personAlexey.age = 25
 console.log(personNikita); // { name: 'alexey', age: 25 }
 
 personNikita = {
-    name: 'Nikita',
-    age: 14,
+	 name: 'Nikita',
+	 age: 14,
 }
 
 console.log(personNikita); // { name: 'Nikita', age: 14 }
@@ -62,13 +62,13 @@ console.log(personAlexey); // { name: 'alexey', age: 25 }
 let namber = 5
 
 if (namber === 5) {
-    console.log('Вау!');
+	console.log('Вау!');
 }
 
 namber = 6
 
 if (namber > 5) {
-    console.log('Ахуеть!');
+	console.log('Ахуеть!');
 }
 
 
@@ -76,41 +76,41 @@ if (namber > 5) {
 namber = 2
 
 if (namber < 5 && namber > 0) {
-    console.log('Неплохо');
+	console.log('Неплохо');
 }
 
 
 namber = -1
 
 if (namber <= 0) {
-    console.log('Очень плохо');
+	console.log('Очень плохо');
 }
 
 /*
-    1 // true 
-    0 // true 
+	 1 // true 
+	 0 // true 
 
-    'asdasd' //true 
-    '' // false 
-    [] // true 
-    [1, 2,] // true 
-    {} // true 
-    null // false 
-    NaN // false
+	 'asdasd' //true 
+	 '' // false 
+	 [] // true 
+	 [1, 2,] // true 
+	 {} // true 
+	 null // false 
+	 NaN // false
 */
- 
+
 
 
 if (namber === 5) {
-    console.log('Вау!');
+	console.log('Вау!');
 } else if (namber > 5) {
-    console.log('Ахуеть!');
+	console.log('Ахуеть!');
 } else if (namber < 5 && namber > 0) {
-    console.log('Неплохо');
+	console.log('Неплохо');
 } else if (namber <= 0) {
-    console.log('Очень плохо');
+	console.log('Очень плохо');
 } else {
-    console.log('ВООЩЕ НИХУЯ НЕ ПОНЯЛ ИДИ НАХУЙ');
+	console.log('ВООЩЕ НИХУЯ НЕ ПОНЯЛ ИДИ НАХУЙ');
 }
 
 /*
@@ -130,3 +130,48 @@ if (namber === 5) {
 
 console.log();
 
+let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+for (let num = 0; num < 11; num++) {
+	console.log(numbers[num]);
+}
+
+
+
+
+////////////////////////////////////////////
+
+
+
+
+
+
+
+(() => {
+	let x = Number(prompt("Введите первое число", 100));
+
+	let y = Number(prompt("Введите второе число", 100));
+
+	let z = Number(prompt("Введите 1, чтобы сработал знак +, 2, что срабатывал знак -, 3, чтобы срабатывал знак *, 4, чтобы срабатывал знака /"));
+
+
+	let result;
+
+
+	switch (z) {
+		case 1: result = x + y;
+			break;
+		case 2: result = x - y;
+			break;
+		case 3: result = x * y;
+			break;
+		case 4: result = x / y;
+			break;
+
+		default: result = 'Команда не существует'
+	}
+
+	alert(result);
+})()
