@@ -149,29 +149,227 @@ for (let num = 0; num < 11; num++) {
 
 
 
-(() => {
-	let x = Number(prompt("Введите первое число", 100));
+//(() => {
+//	let x = Number(prompt("Введите первое число", 100));
 
-	let y = Number(prompt("Введите второе число", 100));
+//	let y = Number(prompt("Введите второе число", 100));
 
-	let z = Number(prompt("Введите 1, чтобы сработал знак +, 2, что срабатывал знак -, 3, чтобы срабатывал знак *, 4, чтобы срабатывал знака /"));
-
-
-	let result;
+//	let z = Number(prompt("Введите 1, чтобы сработал знак +, 2, что срабатывал знак -, 3, чтобы срабатывал знак *, 4, чтобы срабатывал знака /"));
 
 
-	switch (z) {
-		case 1: result = x + y;
-			break;
-		case 2: result = x - y;
-			break;
-		case 3: result = x * y;
-			break;
-		case 4: result = x / y;
-			break;
+//	let result;
 
-		default: result = 'Команда не существует'
+
+//	switch (z) {
+//		case 1: result = x + y;
+//			break;
+//		case 2: result = x - y;
+//			break;
+//		case 3: result = x * y;
+//			break;
+//		case 4: result = x / y;
+//			break;
+
+//		default: result = 'Команда не существует'
+//	}
+
+//	alert(result);
+//})()
+
+
+
+
+//let brow = 'browser';
+
+
+//if (brow === 'Edge') {
+//	alert("You've got thr Edge!");
+//} else if (brow === "Chrom"
+//	|| brow === "Firefox"
+//	|| brow === "Safari"
+//	|| brow === "Opera") {
+//	alert("Okay we support these browsers too");
+//} else {
+//	alert("We hope thet this page looks !")
+//}
+
+
+//const number = +prompt('Ведите число между 0 и 3', '');
+
+//switch (number) {
+//	case 0:
+//		alert('Вы ввели число 0');
+//		break;
+//	case 1:
+//		alert('Вы ввели число 1');
+//		break;
+//	case 2:
+//	case 3:
+//		alert('Вы ввеличи число 2, а может и 3');
+//		break;
+//	default: alert('Вы ввели не то число');
+//		break;
+//}
+
+
+
+//const mySwitch = function (number) {
+//	switch (number) {
+//		case 0:
+//			alert('Вы ввели число 0');
+//			break;
+//		case 1:
+//			alert('Вы ввели число 1');
+//			break;
+//		case 2:
+//		case 3:
+//			alert('Вы ввеличи число 2, а может и 3');
+//			break;
+//		default: alert('Вы ввели не то число');
+//			break;
+//	}
+
+//}
+
+
+
+
+
+//let sum = function (name, num) {
+//	return name + num;
+//}
+//let x = sum(98, 5)
+
+//console.log(x);
+
+
+//mySwitch(sum(5, 10))
+
+
+
+
+
+
+
+//const minus = function (perv, vtor) {
+//	return perv - vtor;
+//}
+
+//console.log(minus(100, 40));
+
+
+
+//x = y-z*(y+z)
+
+//const uravnenie = function (y, z) {
+//	return y - z * (y + z)
+//}
+
+////console.log(uravnenie(5, 8));
+
+
+
+//const minus = function (perv, vtor) {
+//	return perv - vtor;
+//}
+
+
+//let sum = function (name, num) {
+//	return name + num;
+//}
+
+
+//const myFunction = function (code, x, z) {
+
+//	const result = sum(x, z);
+//	if (code === 'minus') {
+//		return minus(x, z);
+//	}
+//	if (code === 'formula') {
+//		return uravnenie(x, z);
+//	}
+//	if (result > 100) {
+//		return code + 'Alexy';
+//	}
+//	if (result < 100) {
+//		return code + 'Tema';
+//	}
+
+//}
+//console.log(myFunction('name: ', 8, 3));
+//console.log(myFunction('name: ', 50, 100));
+//console.log(myFunction('minus', 50, 100));
+//console.log(myFunction('formula', 50, 100));
+
+
+
+
+
+
+
+
+//const code = 'minus'
+//console.log(code === 'minus');
+
+
+
+
+
+
+const uravnenie = (y, z) => {
+	return y - z * (y + z)
+}
+
+const minus = (perv, vtor) => {
+	return perv - vtor;
+}
+
+
+let sum = (name, num) =>
+	name + num;
+
+
+const myFunction = (code, x, z) => {
+
+	const result = sum(x, z);
+	if (code === 'minus') {
+		return minus(x, z);
+	}
+	if (code === 'formula') {
+		return uravnenie(x, z);
+	}
+	if (result > 100) {
+		return code + 'Alexy';
+	}
+	if (result < 100) {
+		return code + 'Tema';
 	}
 
-	alert(result);
-})()
+}
+console.log(myFunction('name: ', 8, 3));
+console.log(myFunction('name: ', 50, 100));
+console.log(myFunction('minus', 50, 100));
+console.log(myFunction('formula', 50, 100));
+
+
+
+
+
+
+
+
+const code = 'minus'
+console.log(code === 'minus');
+
+
+const arowFunction = () => {
+
+}
+
+
+function name(params) {
+
+}
+
+(x, z) => x + z
+
