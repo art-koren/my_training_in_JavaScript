@@ -316,60 +316,131 @@ for (let num = 0; num < 11; num++) {
 
 
 
-const uravnenie = (y, z) => {
-	return y - z * (y + z)
-}
+//const uravnenie = (y, z) => {
+//	return y - z * (y + z)
+//}
 
-const minus = (perv, vtor) => {
-	return perv - vtor;
-}
-
-
-let sum = (name, num) =>
-	name + num;
+//const minus = (perv, vtor) => {
+//	return perv - vtor;
+//}
 
 
-const myFunction = (code, x, z) => {
+//let sum = (name, num) =>
+//	name + num;
 
-	const result = sum(x, z);
-	if (code === 'minus') {
-		return minus(x, z);
+
+//const myFunction = (code, x, z) => {
+
+//	const result = sum(x, z);
+//	if (code === 'minus') {
+//		return minus(x, z);
+//	}
+//	if (code === 'formula') {
+//		return uravnenie(x, z);
+//	}
+//	if (result > 100) {
+//		return code + 'Alexy';
+//	}
+//	if (result < 100) {
+//		return code + 'Tema';
+//	}
+
+//}
+//console.log(myFunction('name: ', 8, 3));
+//console.log(myFunction('name: ', 50, 100));
+//console.log(myFunction('minus', 50, 100));
+//console.log(myFunction('formula', 50, 100));
+
+
+
+
+
+
+
+
+//const code = 'minus'
+//console.log(code === 'minus');
+
+
+//const arowFunction = () => {
+
+//}
+
+
+//function name(params) {
+
+//}
+
+//(x, z) => x + z
+
+
+
+
+
+//function checkAge(age) {
+//	//return (age > 18) || confirm('Родители разрешили?');
+//	return (age > 18) ? true : console.log('Родители разрешили?');
+//}
+//console.log(checkAge(6));
+
+
+
+
+//function min(a, b) {
+//	if (a < b) {
+//		return a;
+//	} else {
+//		return b;
+//	}
+//}
+//console.log(min(2, 5));
+//console.log(min(3, -1));
+//console.log(min(1, 1));
+
+
+
+
+let carInfo = {
+	door: 4,
+	light: 4,
+	name: 'bmw',
+	power: 300,
+	isNew: true,
+	colorInfo: {
+		creslo: 4,
+		cvetSolona: 'grey',
+		pravoePologenieRuly: true,
+		getThis: function () {
+			console.log('ColorInfo ', this);
+		}
+
+	},
+
+	isLock: true,
+	openDoor: function () {
+		this.isLock = false;
+	},
+	closeDoor: function () {
+		this.isLock = true;
+	},
+	getThis: function () {
+		console.log('CarInfo ', this);
 	}
-	if (code === 'formula') {
-		return uravnenie(x, z);
-	}
-	if (result > 100) {
-		return code + 'Alexy';
-	}
-	if (result < 100) {
-		return code + 'Tema';
-	}
 
-}
-console.log(myFunction('name: ', 8, 3));
-console.log(myFunction('name: ', 50, 100));
-console.log(myFunction('minus', 50, 100));
-console.log(myFunction('formula', 50, 100));
-
-
-
-
-
-
-
-
-const code = 'minus'
-console.log(code === 'minus');
-
-
-const arowFunction = () => {
 
 }
 
+carInfo.colorInfo.getThis();
 
-function name(params) {
+carInfo.getThis();
 
-}
+console.log(carInfo.isLock, 'Дверт закрыта');
 
-(x, z) => x + z
+carInfo.openDoor();
+console.log(carInfo.isLock, 'Дверь открыта');
+
+carInfo.closeDoor();
+
+console.log(carInfo.isLock, 'Дверт закрыта');
+
 
